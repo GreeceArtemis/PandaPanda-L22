@@ -1,5 +1,5 @@
 var pandas=document.getElementsByClassName("imgPandas");
-var columna=document.getElementsByClassName("col2");
+var columna=document.getElementsByClassName("col");
 var p1=document.getElementById("p1");
 var p2=document.getElementById("p2");
 var p3=document.getElementById("p3");
@@ -27,12 +27,23 @@ p4.addEventListener('click',function(e) {
   pandas[3].style.display="none";
 });
 extincion.addEventListener('click',function(e) {
-      e.preventDefault();
-  columna[0].style.visibility="hidden";
+  e.preventDefault();
+  if(columna[1].style.visibility=="hidden") {
+    columna[1].style.visibility="visible"
+  }
+  else{
+    columna[1].style.visibility="hidden";
+  }
+
 });
 origen.addEventListener('click',function(e) {
       e.preventDefault();
-  columna[0].style.visibility="visible";
+      if(columna[0].style.visibility=="hidden") {
+        columna[0].style.visibility="visible"
+      }
+      else{
+        columna[0].style.visibility="hidden";
+      }
 });
 
 restaurar.addEventListener('click',function(e) {

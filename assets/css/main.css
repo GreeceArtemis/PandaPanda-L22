@@ -69,7 +69,8 @@ body{
   display: inline-block;
 text-align: center;
 }
-.col1, .col2{
+.col{
+  visibility: visible;
   display: inline-block;
   width: 40%;
   margin:10px;
